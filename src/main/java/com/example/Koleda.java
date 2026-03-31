@@ -46,9 +46,9 @@ public class Koleda {
 
     @Override
     public String toString() {
-        StringBuilder domacnostiString = new StringBuilder("\n\t");
+        StringBuilder domacnostiString = new StringBuilder();
         for (Domacnost domacnost : domacnosti) {
-            domacnostiString.append("\n\t").append(domacnost.toString());
+            domacnostiString.append("• ").append(domacnost.toString());
         }
         return domacnostiString.toString();
     }
